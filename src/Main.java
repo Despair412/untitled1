@@ -1,9 +1,77 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
-    public static void main(String[] args) {//TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        System.out.printf("Привет мир!");
-        System.out.println("Hello world!");
-        }
+    public static void main(String[] args) {
+        // Задача 1
+        var dog = 8.0;
+        var cat = 3.6;
+        var paper = 763789;
+
+        System.out.println("Задача 1:");
+        System.out.println("dog = " + dog);
+        System.out.println("cat = " + cat);
+        System.out.println("paper = " + paper);
+
+        // Задача 2
+        dog += 4;
+        cat += 4;
+        paper += 4;
+
+        System.out.println("\nЗадача 2:");
+        System.out.println("dog = " + dog);
+        System.out.println("cat = " + cat);
+        System.out.println("paper = " + paper);
+
+        // Задача 3
+        dog -= 3.5;
+        cat -= 1.6;
+        paper -= 7639;
+
+        System.out.println("\nЗадача 3:");
+        System.out.println("dog = " + dog);
+        System.out.println("cat = " + cat);
+        System.out.println("paper = " + paper);
+
+        // Задача 4
+        var friend = 19;
+        System.out.println("\nЗадача 4:");
+        friend += 2; // увеличиваем на 2
+        System.out.println("friend после увеличения на 2: " + friend);
+        friend /= 7; // делим на 7
+        System.out.println("friend после деления на 7: " + friend);
+
+        // Задача 5
+        var frog = 3.5;
+        System.out.println("\nЗадача 5:");
+        frog *= 10; // увеличиваем в 10 раз
+        System.out.println("frog после умножения на 10: " + frog);
+        frog /= 3.5; // делим на 3.5
+        System.out.println("frog после деления на 3.5: " + frog);
+        frog += 4; // добавляем 4
+        System.out.println("frog после добавления 4: " + frog);
+
+        // Задача 6
+        var boxer1Weight = 78.2;
+        var boxer2Weight = 82.7;
+        var totalWeight = boxer1Weight + boxer2Weight;
+        var weightDifference = boxer2Weight - boxer1Weight;
+
+        System.out.println("\nЗадача 6:");
+        System.out.println("Общая масса двух бойцов: " + totalWeight);
+        System.out.println("Разница между массами бойцов: " + weightDifference);
+
+        // Задача 7
+        var remainder = boxer2Weight % boxer1Weight;
+        System.out.println("\nЗадача 7:");
+        System.out.println("Остаток от деления масс бойцов: " + remainder);
+
+        // Задача 8
+        var totalWorkHours = 640;
+        var employees = totalWorkHours / 8;
+
+        System.out.println("\nЗадача 8:");
+        System.out.println("Всего работников в компании — " + employees + " человек");
+
+        var increasedEmployees = employees + 94;
+        var totalWorkHoursForNewEmployees = increasedEmployees * 8;
+        System.out.println("Если в компании работает " + increasedEmployees + " человек, то всего " + totalWorkHoursForNewEmployees + " часов работы может быть поделено между сотрудниками");
     }
+}
